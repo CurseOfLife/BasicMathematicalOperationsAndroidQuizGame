@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/txt_v_helloWorld"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/spacing_56"
+    android:layout_alignParentTop="true"
+    android:layout_marginStart="@dimen/spacing_8"
+    android:layout_marginTop="@dimen/spacing_8"
+    android:layout_marginEnd="@dimen/spacing_8"
+    android:background="@drawable/corner_background_three"
+    android:gravity="center"
+    android:text="Hello world"
+    android:textAllCaps="true"
+    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+    android:textColor="@color/textPrimary"
+    android:textStyle="italic"
+    android:fontFamily="monospace"
+    />

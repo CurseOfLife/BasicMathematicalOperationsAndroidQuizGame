@@ -1,0 +1,42 @@
+
+Stuff to do:
+
+change answers to be in range and float
+limit it to 3 .
+
+division change answers
+9. add comments
+10. add to git
+11. add to game store
+12. when game ends reset score to 0
+
+new functionality:
+1.  languages
+
+2. make 2 game modes
+2.1. 1 time for all questions correct answer adds additional time.. increase the timer
+2.2. each question has its own timer.. if the player answers fast correctly = more points
+        if the player ans quick false, bigger penalty
+
+3. add theme \theme tag
+
+4. add multiple users for single player
+
+5. add leaderboards for single player
+
+
+6. start multiplayer api
+
+VERSION II
+refactor to MVVM
+
+
+BUGS:
+1. IllegalArgumentException: n must be positive substract
+
+
+
+get random numbers in range returns a list of ?
+check if they are not the same and not the same to the answer proly take the object ref
+
+wrong answer diffent than

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+
+    <fragment
+        android:id="@+id/mainMenuFragment"
+        android:name="com.example.projectmv3.views.MainMenuFragment"
+        android:label="fragment_main_menu"
+        tools:layout="@layout/fragment_main_menu"
+        app:startDestination="@id/action_mainMenuFragment_to_loginFragment">
+        <action
+            android:id="@+id/action_mainMenuFragment_to_gameModeMenuFragment"
+            app:destination="@id/gameModeMenuFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_optionsFragment"
+            app:destination="@id/optionsFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_achievementsFragment"
+            app:destination="@id/achievementsFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameModeMenuFragment"
+        android:name="com.example.projectmv3.views.game.GameModeMenuFragment"
+        android:label="fragment_game_mode_menu"
+        tools:layout="@layout/fragment_game_mode_menu" >
+        <action
+            android:id="@+id/action_gameModeMenuFragment_to_gamesMenuFragment"
+            app:destination="@id/gamesMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gamesMenuFragment"
+        android:name="com.example.projectmv3.views.game.GamesMenuFragment"
+        android:label="fragment_games_menu"
+        tools:layout="@layout/fragment_games_menu" >
+        <action
+            android:id="@+id/action_gamesMenuFragment_to_gameFragment"
+            app:destination="@id/gameFragment"
+            app:popUpTo="@id/mainMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.example.projectmv3.views.game.GameFragment"
+        android:label="fragment_game"
+        tools:layout="@layout/fragment_game" />
+    <fragment
+        android:id="@+id/optionsFragment"
+        android:name="com.example.projectmv3.views.OptionsFragment"
+        android:label="fragment_options"
+        tools:layout="@layout/fragment_options" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.projectmv3.views.auth.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_mainMenuFragment"
+            app:destination="@id/mainMenuFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_onlineLoginFragment"
+            app:destination="@id/onlineLoginFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_practicePlayFragment"
+            app:destination="@id/practicePlayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/achievementsFragment"
+        android:name="com.example.projectmv3.views.achievements.AchievementsFragment"
+        android:label="fragment_achievements"
+        tools:layout="@layout/fragment_achievements" >
+        <action
+            android:id="@+id/action_achievementsFragment_to_achLocalfFragment"
+            app:destination="@id/achLocalfFragment" />
+        <action
+            android:id="@+id/action_achievementsFragment_to_achMultiplayerFragment"
+            app:destination="@id/achMultiplayerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/achLocalfFragment"
+        android:name="com.example.projectmv3.views.achievements.AchLocalfFragment"
+        android:label="fragment_ach_localf"
+        tools:layout="@layout/fragment_ach_localf" />
+    <fragment
+        android:id="@+id/achMultiplayerFragment"
+        android:name="com.example.projectmv3.views.achievements.AchMultiplayerFragment"
+        android:label="fragment_ach_multiplayer"
+        tools:layout="@layout/fragment_ach_multiplayer" />
+    <fragment
+        android:id="@+id/onlineLoginFragment"
+        android:name="com.example.projectmv3.views.auth.OnlineLoginFragment"
+        android:label="fragment_online_login"
+        tools:layout="@layout/fragment_online_login" >
+        <action
+            android:id="@+id/action_onlineLoginFragment_to_mainMenuFragment"
+            app:destination="@id/mainMenuFragment" />
+        <action
+            android:id="@+id/action_onlineLoginFragment_to_onlineRegisterFragment"
+            app:destination="@id/onlineRegisterFragment" />
+        <action
+            android:id="@+id/action_onlineLoginFragment_to_authHelpFragment"
+            app:destination="@id/authHelpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onlineRegisterFragment"
+        android:name="com.example.projectmv3.views.auth.OnlineRegisterFragment"
+        android:label="fragment_online_register"
+        tools:layout="@layout/fragment_online_register" >
+        <action
+            android:id="@+id/action_onlineRegisterFragment_to_mainMenuFragment"
+            app:destination="@id/mainMenuFragment" />
+        <action
+            android:id="@+id/action_onlineRegisterFragment_to_authHelpFragment"
+            app:destination="@id/authHelpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/authHelpFragment"
+        android:name="com.example.projectmv3.views.auth.AuthHelpFragment"
+        android:label="fragment_auth_help"
+        tools:layout="@layout/fragment_auth_help" />
+    <fragment
+        android:id="@+id/practicePlayFragment"
+        android:name="com.example.projectmv3.views.PracticePlayFragment"
+        android:label="fragment_practice_play"
+        tools:layout="@layout/fragment_practice_play" />
+</navigation>

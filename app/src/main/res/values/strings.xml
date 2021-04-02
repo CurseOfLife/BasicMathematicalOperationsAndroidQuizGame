@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">ProjectMv3</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="play">Play</string>
+    <string name="capital_play">PLAY</string>
+    <string name="options">options</string>
+    <string name="main_menu">MAIN MENU</string>
+    <string name="game_modes">GAME MODES</string>
+    <string name="games_menu">GAMES MENU</string>
+    <string name="answer">answer</string>
+    <string name="game_name">GAME NAME</string>
+    <string name="game_mode_explanation_one">Game Mode Explanation One</string>
+    <string name="tiny_turtle">TINY TURTLE</string>
+    <string name="careful_cat">CAREFUL CAT</string>
+    <string name="game_mode_explanation_two">Game Mode Explanation Two</string>
+    <string name="game_mode_explanation_three">Game Mode Explanation Three</string>
+    <string name="tiger">TIGER</string>
+    <string name="lion_king">LION KING</string>
+    <string name="game_mode_explanation_four">Game Mode Explanation Four</string>
+    <string name="no_internet_connection_found_ncheck_your_connection_or_try_again">No internet connection found.\nCheck your connection or try again.</string>
+    <string name="whoops">Whoops!</string>
+    <string name="try_again">Try again</string>
+
+
+</resources>

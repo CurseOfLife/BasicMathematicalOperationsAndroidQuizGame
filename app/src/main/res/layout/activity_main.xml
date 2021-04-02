@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".views.MainActivity">
+
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_graph" />
+
+    <RelativeLayout
+        android:id="@+id/no_internet_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_no_wifi"
+            android:layout_width="@dimen/spacing_160"
+            android:layout_height="@dimen/spacing_160"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_wifi_off_48"
+            app:tint="@color/textPrimary" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_no_wifi"
+            android:layout_marginTop="@dimen/spacing_24"
+            android:gravity="center"
+            android:text="@string/whoops"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+            android:textColor="@color/textPrimary"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginTop="@dimen/spacing_4"
+            android:gravity="center"
+            android:text="@string/no_internet_connection_found_ncheck_your_connection_or_try_again"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+            android:textColor="@color/silver" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_test_connectivity"
+            style="@style/CustomPlayButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/spacing_16"
+            android:layout_marginEnd="@dimen/spacing_16"
+            android:background="@drawable/play_button_background"
+            android:text="@string/try_again"
+            android:textAppearance="@style/CustomPlayButton"
+            android:textColor="@color/white"
+           />
+
+    </RelativeLayout>
+</FrameLayout>

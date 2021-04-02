@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.game.GamesMenuFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="14dp">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_32" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_56"
+                android:gravity="center"
+                android:text="@string/games_menu"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+                android:textColor="@color/white"
+                android:textStyle="bold|italic" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_48" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_16">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/silver_background"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/arrow_one"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="@dimen/spacing_56"
+                        android:layout_height="@dimen/spacing_56"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/arrow_down_white_48" />
+
+                    <Space
+                        android:layout_width="@dimen/spacing_16"
+                        android:layout_height="0dp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="x + y"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/play_game_mode_one"
+                        android:layout_width="@dimen/spacing_80"
+                        android:layout_height="@dimen/spacing_40"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/spacing_16"
+                        android:background="@drawable/play_button_background"
+                        android:text="@string/capital_play"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/parent_description_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-1dp"
+                    android:background="@drawable/corner_background_two"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_16"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_4"
+                        android:text="ExplanationExplanationExplanationExplanationExplanationExplanation"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+                        android:textColor="@color/white"
+                        android:textStyle="italic" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_16">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/silver_background"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/arrow_two"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="@dimen/spacing_56"
+                        android:layout_height="@dimen/spacing_56"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/arrow_down_white_48" />
+
+                    <Space
+                        android:layout_width="@dimen/spacing_16"
+                        android:layout_height="0dp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="x - y"
+
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/play_game_mode_two"
+                        android:layout_width="@dimen/spacing_80"
+                        android:layout_height="@dimen/spacing_40"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/spacing_16"
+                        android:background="@drawable/play_button_background"
+                        android:text="@string/capital_play"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/parent_description_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-1dp"
+                    android:background="@drawable/corner_background_two"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_16"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_4"
+                        android:text="ExplanationExplanationExplanationExplanationExplanationExplanation"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+                        android:textColor="@color/white"
+                        android:textStyle="italic" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_16">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/silver_background"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/arrow_three"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="@dimen/spacing_56"
+                        android:layout_height="@dimen/spacing_56"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/arrow_down_white_48" />
+
+                    <Space
+                        android:layout_width="@dimen/spacing_16"
+                        android:layout_height="0dp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="x * y"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/play_game_mode_three"
+                        android:layout_width="@dimen/spacing_80"
+                        android:layout_height="@dimen/spacing_40"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/spacing_16"
+                        android:background="@drawable/play_button_background"
+                        android:text="@string/capital_play"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/parent_description_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-1dp"
+                    android:background="@drawable/corner_background_two"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_16"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_4"
+                        android:text="ExplanationExplanationExplanationExplanationExplanationExplanation"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+                        android:textColor="@color/white"
+                        android:textStyle="italic" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_16">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/silver_background"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/arrow_four"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="@dimen/spacing_56"
+                        android:layout_height="@dimen/spacing_56"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/arrow_down_white_48" />
+
+                    <Space
+                        android:layout_width="@dimen/spacing_16"
+                        android:layout_height="0dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="x / y"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/play_game_mode_four"
+                        android:layout_width="@dimen/spacing_80"
+                        android:layout_height="@dimen/spacing_40"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/spacing_16"
+                        android:background="@drawable/play_button_background"
+                        android:text="@string/capital_play"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/parent_description_four"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-1dp"
+                    android:background="@drawable/corner_background_two"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_16"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_4"
+                        android:text="ExplanationExplanationExplanationExplanationExplanationExplanation"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+                        android:textColor="@color/white"
+                        android:textStyle="italic" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</FrameLayout>
